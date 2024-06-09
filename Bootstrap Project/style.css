@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    padding: 10px 6% !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    position: sticky !important;
+    top: 0;
+}
+
+.navbar-nav {
+    gap: 25px;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+nav button {
+    background: #c92f2f !important;
+    color: #fff;
+}
+
+nav button:hover {
+    background: #212529 !important;
+    color: #1abc9c;
+}
+
+.hero-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.img-container,
+.sermon-container
+,.news-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-container .sec,
+.sermon-container .sec,
+.news-container .sec {
+    width: 350px;
+    min-height: 250px;
+    padding-bottom: 30px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.img-container .sec:hover h2 {
+    color: #c92f2f;
+}
+
+.img-container .content p {
+    color: #212529;
+}
+
+.img-container .content a:hover {
+    color: #c92f2f;
+}
+
+.member-section {
+    height: 80vh;
+    width: 100%;
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(20, 104, 132, 0.8), rgba(20, 100, 132, 0.8)), url("https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg?size=626&ext=jpg&ga=GA1.1.291970285.1692622660&semt=sph");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.member-section h3 {
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.member-section h1 {
+    color: white;
+}
+
+.member-section a {
+    background: #fff;
+    padding: 10px 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.member-section a:hover {
+    background: #c92f2f;
+    color: #fff;
+}
+
+.sermon-section {
+    padding-block: 60px;
+}
+
+.sermon-container img {
+    border-radius: 6px;
+}
+
+.icons {
+    padding-block: 20px;
+}
+
+.icons i {
+    margin-right: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.sermon-container hr {
+    margin-block: 30px;
+    background-color: lightgray;
+}
+
+.address span {
+    font-style: italic;
+}
+
+.address p {
+    line-height: 18px;
+}
+
+.address i {
+    font-size: 13px;
+    margin-right: 10px;
+    color: #c92f2f;
+}
+
+.event {
+    background-image: linear-gradient(rgba(20, 104, 132, 0.8), rgba(20, 100, 132, 0.8)), url("https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg?size=626&ext=jpg&ga=GA1.1.291970285.1692622660&semt=sph");
+    color: #fff;
+    padding: 50px;
+}
+
+.event p {
+    font-size: 18px;
+}
+
+.gallery {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.gallery img:hover{
+    scale: 1.1;
+}
+
+.gallery img:hover{
+    cursor:grab;
+}
+
+.news-container .sec h5{
+    color: rgb(157, 157, 157);
+    font-size: 14px;
+}
+
+.news-container .sec h5 i{
+    margin-right: 6px;
+    color: #c92f2f;
+}
+.news-container .sec h5 i:last-child{
+    margin-left: 5px;
+}
+
+.news-container .sec img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.subscribe .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer-row{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+.footer-row h4{
+    padding-bottom: 20px;
+}
+
+.footer-row .column-1{
+    width: 250px;
+}
+
+.column-1,.column-2,.column-3,.column-4{
+    padding-top: 25px;
+}
+
+.column-1 p{
+    color: rgb(178, 178, 178);
+    padding-top: 30px;
+}
+
+.column-2 a{
+    color: rgb(178, 178, 178);
+    text-decoration: none;
+}
+
+.column-3 i{
+    color: #c92f2f;
+    margin-right: 5px;
+}
+
+.column-3 span{
+    font-style: italic;
+    color: rgb(178, 178, 178);
+}
+
+.column-4 i{
+    color: #c92f2f;  
+    margin-right: 6px; 
+}
+
+.column-4 p{
+    font-size: 14px;
+}
+
+.column-4 p:hover{
+    color: #c92f2f;
+}
+
+.footer-row a:hover, .footer-row span:hover{
+    cursor: pointer;
+    color: #c92f2f;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+.copyright .right i{
+    margin-left: 20px;
+}
+
+@media (max-width:780px) {
+    .copyright{
+        flex-direction: column ;
+        text-align: left;
+        justify-content: flex-start;
+    }    
+}

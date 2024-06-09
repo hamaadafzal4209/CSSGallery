@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.fa-solid {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-bars{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: -15px;
+    font-weight: 500;
+}
+
+.logo {
+    padding: 0 20px;
+    margin-right: 100px;
+    margin-left: -3px;
+    width: 130px;
+}
+
+.search-bar{
+    width: 60%;
+    margin: auto;
+}
+
+.search-bar input{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.fa-magnifying-glass{
+    background-color: rgb(248, 248, 248);
+    width: 64px;
+    padding: 12px 25px;   
+    margin-left: -50px; 
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    outline: none;
+    border-left: 1px solid grey;
+    font-size: 1rem;
+    color: grey;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+input{
+    font-size: 1rem;
+}
+
+.fa-microphone{
+    width: 40px ;
+    height: 40px ;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: rgb(248, 248, 248);
+    font-size: 1rem ;
+    text-align: center;
+}
+
+.fa-video,.fa-bell{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.fa-video{
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in{
+    display: flex;
+    align-items: center ;
+}
+
+.sign-in img{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa-solid:hover{
+    background-color: lightgray;
+}
+
+/* -----------sidebar------------ */
+
+.sidebar{
+    width: 100px;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -15px;
+}
+
+.sidebar div{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-icon p{
+    padding-top: 7px;
+    font-size: 11px ;
+    padding-left: 0;
+}
+
+.aside-icon .fa-solid{
+    font-size: 1.1rem;
+}
+
+.sidebar diV:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 5px;
+}
+
+/* --------------Tabs------------- */
+
+main{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tabs p{
+    display: inline-block;
+    padding: 7px 10px;
+    color: rgb(15, 15, 15);
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
+
+.tabs p:nth-child(1){
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+/* ------Videos--------- */
+
+.main-content{
+    flex-direction: column;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    /* margin-top: 30px; */
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+.frame{
+    margin-top: 50px;
+    width: 371px;
+    height: 209px;
+    border: 1px solid grey;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.img-content{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.img-content img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-position: center;
+}
+
+.content{
+    margin-top: -5px;
+}
+
+.img-content .content h3{
+    color: rgb(15, 15, 15);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.img-content .content p{
+    color: #777;
+    font-size: 13px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+hr{
+    height: 3px;
+    background-color: lightgray;
+    margin: 50px 0;
+    margin-right: 50px;
+}
+
+.short{
+    width: 216px;
+    height: 383px;
+    border: 1px solid grey;
+}

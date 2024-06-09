@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(30, 30, 70, 0.6), rgba(30, 30, 70, 0.6)), url("https://images.unsplash.com/photo-1609717126330-9c9e02005415?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2VhJTIwbmlnaHQlMjBibHVlJTIwY29sb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-position: bottom;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 20px;
+}
+
+nav .nav-links ul {
+    display: flex;
+}
+
+nav .nav-links ul li {
+    padding: 0 23px;
+}
+
+nav .nav-links ul li a {
+    color: white;
+}
+
+nav .nav-links ul li a:hover {
+    color: #FF6000;
+    transition: 0.5s;
+}
+
+nav .logo {
+    color: white;
+    font-size: 27px;
+    margin-left: 35px;
+}
+
+nav input {
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search {
+    margin-right: 35px;
+}
+
+.serach-btn {
+    padding: 12px 20px;
+    background-color: #FF6000;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    margin-left: -10px;
+}
+
+.body {
+    width: 92%;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    padding-top: 60px;
+    margin-top: -50px;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.color {
+    font-size: 55px;
+    color: #FF6000;
+}
+
+.content p {
+    padding-bottom: 15px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.join-btn {
+    padding: 10px 35px;
+    color: black;
+    background-color: #FF6000;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container {
+    margin-top: 80px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+form input {
+    padding: 10px 0;
+    width: 100%;
+}
+
+form h2 {
+    background-color: white;
+    color: #FF6000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+form input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #FF6000;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+form .login-btn {
+    background-color: #FF6000;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form span {
+    color: #FF6000;
+}
+
+.bottom {
+    padding-top: 5px;
+}
+
+.form-icons {
+    margin-bottom: -20px;
+}
+
+.form-icons .fa-brands {
+    padding: 5px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.form-icons .fa-brands:hover {
+    color: #FF6000;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .body{
+        background-color: #FF6000;
+    }
+}

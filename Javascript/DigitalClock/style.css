@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#2b3134,#1b134a);
+}
+
+.container{
+    width: 700px;
+    height: 150px;
+    border-radius: 10px;
+    background: #2b2c66;
+    color: white;
+    padding: 50px;
+}
+
+.clock{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clock span{
+    font-size: 7vw;
+    width: 120px;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+#hrs::after{
+    font-size: 1.2vw;
+    content: "( HOURS )";
+    position: absolute;
+    top: 130%;
+    left: 4%;
+}
+#min::after{
+    font-size: 1.2vw;
+    content: "( MINS )";
+    position: absolute;
+    top: 130%;
+    left: 46%;
+}
+#sec::after{
+    font-size: 1.2vw;
+    content: "( SEC )";
+    position: absolute;
+    top: 130%;
+    left: 87%;
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 500px;
+        
+    }
+}
+
+@media (max-width:500px) {
+    .container{
+        width: 320px;
+    }
+}

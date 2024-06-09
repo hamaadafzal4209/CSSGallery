@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background: #f4f5f6;
+}
+
+/* ----------- Utility Classes */
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcf01;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* -------------- header -------------- */
+
+header {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    background: #0f171c;
+    font-size: 16px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-left img {
+    width: 35px;
+    margin-left: 5px;
+}
+
+.nav-middle li {
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.nav-middle a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-middle a:hover {
+    color: #ffcf01;
+}
+
+
+.color-btn {
+    background: #ffcf01;
+    color: #0f171c;
+    padding: 12px 44px;
+    line-height: 22px;
+    letter-spacing: normal;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    padding: 12px 44px;
+    background: transparent;
+    border: 1px solid #ffcf01;
+    border-radius: 6px;
+    margin-left: 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.nav-right img,
+header .menu {
+    width: 22px;
+    margin-left: 20px;
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(260deg) brightness(104%) contrast(101%);
+}
+
+.hero-section {
+    height: 100%;
+    width: 100vw;
+    background-image: url("exness-home-page-banner-desktop-1.webp");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 56px;
+    color: #ffffff;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: #ffffff;
+    padding-block: 30px;
+}
+
+.content {
+    padding: 120px 100px;
+}
+
+/* ---------------- brand --------------------- */
+
+.brand {
+    background: #0f171c;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.brand h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.brand p {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.brand p span {
+    color: #ffcf01;
+}
+
+.brands-img {
+    margin-block: 30px;
+}
+
+.brands-img img {
+    width: 200px;
+}
+
+.brand-content {
+    justify-content: center;
+}
+
+.brand-content p {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 20px;
+    color: #62696f;
+    font-weight: 700;
+}
+
+/* ------------------ fecilities ---------------------  */
+
+.fecilities .left {
+    width: 50%;
+    background: #363d42;
+    padding: 60px 100px;
+    min-height: 100px;
+}
+
+.fecilities .left h1,
+.fecilities .right h1 {
+    font-size: 26px;
+}
+
+.fecilities .left p,
+.fecilities .right p {
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.fecilities .left a,
+.fecilities .right a {
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 70px;
+    font-weight: 500;
+}
+
+.fecilities .left a:hover,
+.fecilities .right a:hover {
+    text-decoration: underline;
+}
+
+.fecilities .right {
+    width: 50%;
+    background: #62696f;
+    padding: 60px 50px;
+}
+
+/* ------------------- tarde ---------------- */
+
+.tarde {
+    background: #f4f5f6;
+    text-align: center;
+    color: #000;
+    padding-top: 80px;
+}
+
+.trade-card {
+    width: 85%;
+    justify-content: space-between;
+    margin: 50px auto;
+    flex-wrap: wrap;
+
+}
+
+.trade-card .card {
+    width: 295px;
+    background: #ffffff;
+    padding: 28px 36px;
+    padding-bottom: 12px !important;
+    border-radius: 6px;
+    height: 300px;
+    margin: 30px;
+    min-height: 300px;
+}
+
+.trade-card .card img {
+    height: 70px;
+}
+
+.trade-card .card h2 {
+    font-size: 28px;
+    padding: 15px 0;
+    font-weight: 520;
+}
+
+.trade-card .card p {
+    font-size: 16px;
+}
+
+.trade-card .card a {
+    font-size: 16px;
+    color: #3070de;
+    display: inline-block;
+    padding-top: 55px;
+}
+
+.trade-card .card a:hover {
+    text-decoration: underline;
+}
+
+/* -------------- acounts ------------------- */
+
+.accounts-section {
+    background: #ffffff;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 50px;
+}
+
+.accounts-section h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.accounts {
+    margin: 30px auto;
+    text-align: left;
+}
+
+.accounts .left {
+    width: 50%;
+    background: #0f171c;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 40px 30px;
+}
+
+.accounts .left h2,
+.accounts .right h2 {
+    font-size: 28px;
+    padding-bottom: 70px;
+}
+
+.accounts .right {
+    width: 50%;
+    background: #f4f5f6;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #000;
+    padding: 40px 30px;
+}
+
+.account-types h3 {
+    font-size: 24px;
+    padding-right: 35px;
+    text-decoration: underline dotted;
+}
+
+.accounts p {
+    font-size: 18px;
+    padding-block: 30px;
+}
+
+.accounts .btn {
+    padding: 12px 60px;
+    margin: 0;
+}
+
+.accounts .right .btn {
+    border: 1px solid #0f171c;
+    background: #f4f5f6;
+    color: #0f171c;
+}
+
+/* ----------------- trending-volumn ---------------- */
+
+.trending-volumn {
+    background: #f4f5f6;
+    color: #000;
+    padding: 100px;
+    padding-bottom: 50px;
+}
+
+.trending-volumn .left {
+    width: 50%;
+}
+
+.trending-volumn .left h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.trending-volumn .left p {
+    font-size: 18px;
+    padding-block: 30px;
+    line-height: 24px;
+}
+
+.trending-volumn .left a {
+    font-size: 18px;
+    color: #3070de;
+}
+
+.trending-volumn .left a:hover {
+    text-decoration: underline;
+}
+
+.trending-volumn .right {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.trending-volumn .right .price h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.price p {
+    font-size: 18px;
+    padding-block: 10px;
+    font-weight: 400;
+}
+
+.price {
+    padding-bottom: 50px;
+}
+
+/* ------------ cta ----------------- */
+
+.cta {
+    background: url("assets/CTA-Image-1.webp");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+
+.cta h1 {
+    font-size: 36px;
+}
+
+.cta p {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 18px;
+}
+
+/* ------------- footer --------------- */
+
+footer {
+    background: #f4f5f6;
+    padding: 100px;
+    padding-bottom: 50px;
+    color: #000;
+    align-items: baseline !important;
+    justify-content: space-between;
+}
+
+footer .links {
+    margin-right: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+footer .links h3 {
+    font-size: 13px;
+}
+
+footer .links a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #0f171c !important;
+    text-align: left;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 85%;
+    background-color: #0f171c;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+
+/* ----------- social-section --------------------- */
+
+.social-container {
+    background: #f4f5f6;
+    padding-bottom: 70px;
+}
+
+.social-section {
+    padding-block: 50px;
+    width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.social-section .left .peace {
+    width: 35px;
+    margin-left: 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.social-section .right {
+    width: 65%;
+    float: right;
+    margin-top: -80px;
+}
+
+.social-section .right p {
+    font-size: 13px;
+    color: #49535a;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+/* ------------- sub-footer --------------- */
+
+.sub-footer {
+    padding-top: 60px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.copyright {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sub-footer .left a {
+    color: #49535a;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    display: inline-block;
+    font-size: 13px;
+    padding-right: 20px;
+}
+
+.sub-footer .right {
+    color: #49535a;
+    font-size: 13px;
+}
+
+.menu{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    display: none;
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.height{
+    visibility: hidden;
+}
+
+.color{
+    background: none;
+}
+
+/* ------------ Media Query -------------- */
+
+@media (max-width:1100px) {
+    nav {
+        flex-direction: column;
+        /* background: #000; */
+        height: 100vh;
+        width: 100%;
+    }
+
+    .nav-left {
+        padding-block: 20px;
+    }
+
+    .nav-middle{
+        background: transparent;
+    }
+    
+    .nav-middle ul {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%);
+    }
+
+    .nav-middle li {
+        display: block;
+        padding-block: 10px;
+        text-align: center;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        position: absolute;
+        top: 42%;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+}
+
+@media (max-width:880px) {
+    .content {
+        padding: 120px 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 42px;
+    }
+
+    .brands-img img {
+        width: 120px;
+    }
+
+    .brand h1 {
+        font-size: 28px;
+    }
+
+    .brand p {
+        font-size: 16px;
+    }
+
+    .brand-content p {
+        font-size: 11px;
+    }
+
+    .fecilities .left {
+        padding: 50px 50px;
+    }
+
+    .fecilities .right {
+        padding: 50px;
+        padding-right: 20px;
+    }
+
+    .fecilities .left h1,
+    .fecilities .right h1 {
+        font-size: 18px;
+    }
+
+    .trade-card {
+        justify-content: center;
+    }
+
+    .card img{
+        margin-top: 15px;
+    }
+
+    .accounts-section {
+        width: 95%;
+    }
+
+    .accounts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .accounts .left,
+    .accounts .right {
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .accounts .left h2,
+    .accounts .right h2 {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .account-types h3 {
+        font-size: 16px;
+    }
+
+    .accounts .right {
+        margin-top: 30px;
+    }
+
+    .accounts p {
+        font-size: 16px;
+        padding-block: 20px;
+    }
+
+    .trending-volumn {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .trending-volumn .left {
+        width: 100%;
+    }
+
+    .price p {
+        font-size: 15px;
+    }
+
+    .price {
+        padding-bottom: 30px;
+    }
+
+    .social-container {
+        padding-inline: 30px;
+    }
+
+    .social-icons {
+        margin-bottom: 30px;
+    }
+
+    .social-section {
+        padding-block: 30px;
+        width: 100%;
+    }
+
+    .social-section .right {
+        margin-top: 0;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .sub-footer .left {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .sub-footer .left a {
+        padding: 0;
+        flex-direction: column;
+        padding-right: 30px;
+        line-height: 24px;
+    }
+
+    .sub-footer .right {
+        padding-bottom: 60px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:620px) {
+    br {
+        display: none;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .content {
+        padding: 120px 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .hero-section {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .color-btn {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .brand {
+        padding-inline: 20px;
+    }
+
+    .brand p {
+        padding-bottom: 15px;
+    }
+
+    .fecilities .left {
+        padding: 20px 20px;
+    }
+
+    .fecilities .right {
+        padding: 20px 20px;
+    }
+
+    .fecilities .left p,
+    .fecilities .right p {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+
+    .fecilities .left a,
+    .fecilities .right a {
+        padding-top: 30px;
+    }
+
+    .trade-card {
+        width: 95%;
+    }
+
+    .trade-card .card {
+        padding: 5px;
+    }
+
+    .accounts-section {
+        padding: 30px;
+        padding-top: 50px;
+    }
+
+    .accounts-section h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .trending-volumn .left h1 {
+        font-size: 24px;
+    }
+
+    .trending-volumn .left p {
+        font-size: 16px;
+        padding-block: 20px;
+    }
+
+    .trending-volumn .right {
+        padding-top: 40px;
+    }
+
+    .trending-volumn .right .price h1 {
+        font-size: 24px;
+    }
+
+    .cta {
+        padding: 30px;
+    }
+
+    .cta h1 {
+        font-size: 24px;
+    }
+
+    .cta p {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}

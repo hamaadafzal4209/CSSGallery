@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Trading Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left flex">
+                <svg width="168" height="36" viewBox="0 0 168 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M129.454 16.003C129.089 13.956 127.332 12.9849 125.685 12.9849C124.039 12.9849 122.319 13.9913 121.953 16.003H129.454ZM133.314 21.5997C132.838 22.7096 131.283 25.9962 125.758 25.9962C123.197 25.9962 121.258 25.3018 119.685 23.8792C117.929 22.3178 117.197 20.3742 117.197 18.0151C117.197 15.031 118.477 13.1928 119.612 12.1163C121.478 10.3815 123.673 10 125.576 10C128.795 10 130.661 11.2146 131.759 12.4632C133.442 14.372 133.662 16.7312 133.662 18.3619V18.7088H121.807C121.807 19.6118 122.063 20.583 122.576 21.2419C123.05 21.8669 124.039 22.6646 125.758 22.6646C127.441 22.6646 128.722 21.9016 129.454 20.6864L133.314 21.5997ZM68.2572 16.003C67.8915 13.956 66.1352 12.9849 64.4887 12.9849C62.8421 12.9849 61.1225 13.9913 60.7567 16.003H68.2572ZM72.1172 21.6036C71.6417 22.7135 70.0866 26.0001 64.5618 26.0001C62.0009 26.0001 60.0611 25.3057 58.4884 23.8831C56.7315 22.3217 56 20.3781 56 18.019C56 15.0349 57.2801 13.1967 58.4146 12.1202C60.2813 10.3854 62.4764 10.0039 64.379 10.0039C67.5989 10.0039 69.4649 11.2185 70.5628 12.4671C72.2452 14.376 72.4653 16.7351 72.4653 18.3658V18.7127H60.6104C60.6104 19.6157 60.8665 20.5869 61.3792 21.2458C61.854 21.8708 62.8422 22.6685 64.5618 22.6685C66.245 22.6685 67.5257 21.9055 68.2572 20.6903L72.1172 21.6036ZM96.7332 10.2718H101.562V12.7562C102.511 11.7683 104.046 10.022 106.832 10.022C110.346 10.022 112.429 11.8043 112.429 16.608V25.6019H107.777V16.9715C107.777 15.1044 106.85 13.99 105.451 13.99C103.822 13.99 102.422 14.929 101.562 15.9792V25.6026H96.7332V10.2718ZM154.574 23.9537L155.839 20.5952C157.63 21.8046 160.254 22.5824 161.797 22.5824C163.155 22.5824 163.772 22.1212 163.772 21.4308V21.3736C163.772 20.423 162.168 20.1064 160.346 19.5887C158.031 18.9548 155.408 17.947 155.408 14.9527V14.8949C155.408 11.7567 158.124 10 161.457 10C163.557 10 165.42 10.413 167.21 11.5363L166.251 14.8082C164.616 13.9154 162.568 13.3688 161.364 13.3688C160.223 13.3688 159.637 13.8293 159.637 14.4343V14.4922C159.637 15.356 161.211 15.7581 163 16.3342C165.315 17.0542 168 18.0909 168 20.9125V20.9703C168 24.3962 165.254 25.9512 161.673 25.9512C159.358 25.9512 156.766 25.5665 154.574 23.9537ZM137.813 23.9537L139.078 20.5952C140.868 21.8046 143.492 22.5824 145.036 22.5824C146.393 22.5824 147.01 22.1212 147.01 21.4308V21.3736C147.01 20.423 145.406 20.1064 143.584 19.5887C141.27 18.9541 138.646 17.9464 138.646 14.9527V14.8949C138.646 11.7567 141.363 10 144.696 10C146.795 10 148.659 10.413 150.448 11.5363L149.49 14.8082C147.854 13.9154 145.807 13.3688 144.603 13.3688C143.462 13.3688 142.875 13.8293 142.875 14.4343V14.4922C142.875 15.356 144.449 15.7581 146.238 16.3342C148.554 17.0542 151.239 18.0909 151.239 20.9125V20.9703C151.239 24.3962 148.492 25.9512 144.912 25.9505C142.597 25.9512 140.004 25.5665 137.813 23.9537ZM83.5558 14.773L86.8848 10.2866H92.1244L86.1601 17.7738L92.3879 25.6039H87.0162L83.4569 20.8317L79.897 25.6039H74.6573L80.8534 17.8309L74.889 10.2866H80.2607L83.5558 14.773Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.63343 20.4459C9.50836 20.1364 9.38329 18.9803 9.38329 18.2992C9.38329 14.6244 11.9899 11.4448 18.8291 11.4448H22.4152C22.4152 11.4448 21.6069 11.7961 19.8296 13.0962C18.053 14.397 9.63343 20.4459 9.63343 20.4459ZM37.7826 17.6821L50.7112 8H44.2887L34.5717 15.3693L32.0006 13.6977H25.8973L31.4437 17.7642L27.1486 21.3563C24.9587 23.1934 21.8906 25.7617 17.3447 25.7617C15.5517 25.7617 13.0109 25.3615 11.593 23.8125L32.5495 8H19.8717C12.115 8 8.15302 12.438 8.15302 17.9297C8.15302 19.065 8.40315 20.4889 8.69475 21.1497L0 27.5291H6.65156L10.6761 24.515C12.1354 26.3111 15.2436 27.9826 18.5348 27.9996C23.9568 28.0452 28.8495 24.4746 30.5893 23.1106L34.5302 20.0145L44.81 27.5291H52L37.7826 17.6821Z"
+                        fill="#FFCF01" />
+                </svg>
+                <img src="peace.png" alt="">
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="">About</a>
+                    <li><a href="">Trading</a></li>
+                    <li><a href="">Platform</a></li>
+                    <li><a href="">Tools</a></li>
+                    <li><a href="">Partners</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="nav-right flex">
+                <a class="color-btn" href="">Register</a>
+                <a href="" class="btn">Sign In</a>
+                <img src="globe.png" alt="">
+            </div>
+        </nav>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="hero-section">
+            <div class="content">
+                <h1>Online trading with <br> better-than-market <br> conditions</h1>
+                <p>Trade across multiple markets with the most <br> stable and reliable pricing in the industry.</p>
+                <a class="color-btn" href="">Register</a>
+                <a href="" class="btn">Try Free Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------- Brand ----------------->
+
+    <section class="brand">
+        <h1>Instant withdrawals, 24/7</h1>
+        <p>Our withdrawals are carried out in seconds with no manual processing, including <br> on weekends.</p>
+        <p><span>Learn more about deposits & withdrawals at Exness</span></p>
+        <div class="brands-img">
+            <a href=""><img src="assets/Visa.svg" alt=""></a>
+            <a href=""><img src="assets/card 2.svg" alt=""></a>
+            <a href=""><img src="assets/card 3.svg" alt=""></a>
+            <a href=""><img src="assets/card 4.svg" alt=""></a>
+        </div>
+        <div class="brand-content flex">
+            <img src="assets/PCI-DSS.svg" alt="">
+            <p>We comply with the Payment Card Industry Data Security Standard (PCI DSS) to ensure <br> your security
+                and privacy. We guarantee a protected payment experience for you. <span> Learn <br> more.</span></p>
+        </div>
+    </section>
+
+    <!---------------- Fesilities ----------------------->
+
+    <section class="fecilities flex">
+        <div class="left">
+            <h1>Fast & reliable execution</h1>
+            <p>With free VPS hosting</p>
+            <a href="">See VPS details</a>
+        </div>
+        <div class="right">
+            <h1>Transparent price history</h1>
+            <p>Tick-level data </p>
+            <a href="">See price history</a>
+        </div>
+    </section>
+
+    <!----------------- trade -------------------->
+
+    <div class="tarde">
+        <h1>Access and trade global markets</h1>
+        <div class="trade-card flex">
+            <div class="card">
+                <img src="assets/instruments-cards-currencies.webp" alt="">
+                <h2>Currencies</h2>
+                <p>Trade the world’s largest market with spreads starting from 0 pips</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="assets/instruments-cards-stocks.webp" alt="">
+                <h2>Stocks</h2>
+                <p>Trade stocks of the biggest names in the international stock market </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="assets/instruments-cards-commodities.webp" alt="">
+                <h2>Commodities</h2>
+                <p>Diversify your portfolio and trade oil, natural gas and metals</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- accounts ------------------->
+
+    <section class="accounts-section">
+        <h1>Accounts to suit your trading strategy</h1>
+        <div class="accounts flex">
+            <div class="left">
+                <h2>Standard accounts</h2>
+                <div class="account-types flex">
+                    <h3>Standard</h3>
+                    <h3>Standard Cent</h3>
+                </div>
+                <p>Feature-rich, commission-free accounts that suit the needs of today’s traders. Sign up and experience
+                    the advantages of our most popular account.</p>
+                <a href="" class="btn">See details</a>
+            </div>
+            <div class="right">
+                <h2>Professional accounts</h2>
+                <div class="account-types flex">
+                    <h3>Raw Spread</h3>
+                    <h3>Zero</h3>
+                    <h3>Pro</h3>
+                </div>
+                <p>Feature-rich, commission-free accounts that suit the needs of today’s traders. Sign up and experience
+                    the advantages of our most popular account.</p>
+                <a href="" class="btn">See details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-volumn flex">
+        <div class="left">
+            <h1>The numbers that make up Exness</h1>
+            <p>From trading volume to number of active clients, we are happy to share with you the figures that make us
+                one of the world’s leading brokers</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="right">
+            <div class="price">
+                <h1>$4.43 trillion</h1>
+                <p>Trading volume in September 2023</p>
+            </div>
+            <div class="price">
+                <h1>653,593</h1>
+                <p>Active clients in September 2023</p>
+            </div>
+            <div class="price">
+                <h1>$1.71 billion</h1>
+                <p>Client withdrawals in Q3 2023</p>
+            </div>
+            <div class="price">
+                <h1>$140.8 million</h1>
+                <p>Partner rewards in Q3 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <!------------ cta -------------------->
+
+    <section class="cta">
+        <h1>Ready to get started?</h1>
+        <p>It only takes 3 minutes to get your account set up <br> and ready for trading</p>
+        <a class="color-btn" href="">Register</a>
+    </section>
+
+    <!--=========== footer --------------->
+
+    <footer class="flex">
+        <div class="links">
+            <h3>Corporate</h3>
+            <p><a href="">Exness blog</a></p>
+            <p><a href="">Social responsibility</a></p>
+            <p><a href="">Contact us</a></p>
+        </div>
+        <div class="links">
+            <h3>Media center</h3>
+            <p><a href="">Exness in the media</a></p>
+            <p><a href="">Team Pro</a></p>
+        </div>
+        <div class="links">
+            <h3>Legal & reporting</h3>
+            <p><a href="">Regulation</a></p>
+            <p><a href="">Financial reports</a></p>
+            <p><a href="">Legal documents</a></p>
+            <p><a href="">Compensation <br> fund</a></p>
+        </div>
+        <div class="links">
+            <h3>Accounts</h3>
+            <p><a href="">Standard accounts</a></p>
+            <p><a href="">Professional <br> accounts</a></p>
+            <p><a href="">Social Trading <br> accounts</a></p>
+            <p><a href="">Deposits & <br> withdrawals</a></p>
+            <p><a href="">Fees</a></p>
+        </div>
+        <div class="links">
+            <h3>Instruments</h3>
+            <p><a href="">Forex</a></p>
+            <p><a href="">Commodities</a></p>
+            <p><a href="">Stocks</a></p>
+            <p><a href="">Indices</a></p>
+            <p><a href="">Crypto</a></p>
+        </div>
+        <div class="links">
+            <h3>Platforms</h3>
+            <p><a href="">Exness Trade app</a></p>
+            <p><a href="">Exness Terminal</a></p>
+            <p><a href="">MetaTrader 5</a></p>
+            <p><a href="">MetaTrader 4</a></p>
+            <p><a href="">MetaTrader <br> WebTerminal</a></p>
+            <p><a href="">MetaTrader mobile</a></p>
+        </div>
+        <div class="links">
+            <h3>Tools</h3>
+            <p><a href="">Analytical tools</a></p>
+            <p><a href="">Investment <br> calculator</a></p>
+            <p><a href="">Economic calendar</a></p>
+            <p><a href="">Currency converter</a></p>
+            <p><a href="">Tick history</a></p>
+            <p><a href="">VPS hosting</a></p>
+            <p><a href="">Trading Central <br> WebTV</a></p>
+        </div>
+        <div class="links">
+            <h3>More</h3>
+            <p><a href="">Partners</a></p>
+            <p><a href="">Help Center</a></p>
+        </div>
+    </footer>
+
+    <hr>
+
+    <!------------------- social-section --------------------->
+
+    <section class="social-container">
+        <div class="social-section ">
+            <div class="left">
+                <img src="assets/footer-logo.svg" alt="">
+                <img class="peace" src="peace.png" alt="">
+                <div class="social-icons flex">
+                    <img src="assets/facebook.png" alt="">
+                    <img src="assets/twitter.png" alt="">
+                    <img src="assets/instagram.png" alt="">
+                    <img src="assets/linkedin.png" alt="">
+                    <img src="assets/youtube.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <p>E​xness (SC) Ltd ​is a Securities Dealer registered in Seychelles with registration number 8423606-1
+                    and authorised by the Financial Services Authority (FSA) with licence number SD025. The registered
+                    office of E​xness (SC) Ltd is at 9A CT House, 2nd floor, Providence, Mahe, Seychelles.</p>
+                <p>Exness B.V. is a Securities Intermediary registered in Curaçao with registration number 148698(0) and
+                    authorised by the Central Bank of Curaçao and Sint Maarten (CBCS) with licence number 0003LSI. The
+                    registered office of Exness B.V. is at Emancipatie Boulevard Dominico F. “Don” Martina 31, Curaçao.
+                </p>
+                <p>Exness (VG) Ltd is authorised by the Financial Services Commission (FSC) in BVI with registration
+                    number 2032226 and investment business licence number SIBA/L/20/1133. The registered office of
+                    Exness (VG) Ltd is at Trinity Chambers, P.O. Box 4301, Road Town, Tortola, BVI.</p>
+                <p>The entities above are duly authorized to operate under the Exness brand and trademarks.</p>
+                <p>Risk Warning: Our services relate to complex derivative products which are traded outside an
+                    exchange. These products come with a high risk of losing money rapidly due to leverage and thus are
+                    not appropriate for all investors. Under no circumstances shall Exness have any liability to any
+                    person or entity for any loss or damage in whole or part caused by, resulting from, or relating to
+                    any investing activity. Learn more.</p>
+                <p>The entities above do not offer services to residents of certain jurisdictions including the USA,
+                    Iran, North Korea, Europe, the United Kingdom and others. </p>
+                <p>The information on this website does not constitute investment advice or a recommendation or a
+                    solicitation to engage in any investment activity.</p>
+                <p>The information on this website may only be copied with the express written permission of Exness.</p>
+                <p>Exness complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your
+                    security and privacy. We conduct regular vulnerability scans and penetration tests in accordance
+                    with the PCI DSS requirements for our business model.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <!--------------- Sub-Footer ------------------>
+
+    <section class="sub-footer ">
+        <img src="assets/footer-image-DSS.svg" alt="">
+        <div class="copyright flex">
+            <div class="left flex">
+                <a href="">Risk Disclosure</a>
+                <a href="">Preventing MOney Laundering</a>
+                <a href="">Privacy Agreement</a>
+            </div>
+            <div class="right">
+                <p>© 2023 Exness</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

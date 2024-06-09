@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Light</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            height: 350px;
+            width: auto;
+            margin-block: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 20px;
+            background: skyblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="img" src="img/light-off.png" alt="">
+    <button class="btn">Turn On</button>
+
+    <script>
+        let img = document.querySelector("#img")
+        let btn = document.querySelector(".btn")
+
+        btn.addEventListener("click", (e) => {
+            if (btn.textContent == "Turn On") {
+                img.src = "img/light-on.png";
+                btn.innerHTML = "Turn Off"
+                btn.style.backgroundColor = "blue"
+                btn.style.color = "white"
+            }
+            else {
+                img.src = "img/light-off.png";
+                btn.innerHTML = "Turn On"
+                btn.style.backgroundColor = "skyblue"
+                btn.style.color = "black"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
